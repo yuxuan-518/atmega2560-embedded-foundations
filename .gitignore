@@ -1,4 +1,4 @@
-# Publish only C source/header files in each numbered project src/include directory.
+# Publish project source/headers, shared library source/headers, and PlatformIO configurations.
 *
 !/.gitignore
 !/code/
@@ -11,6 +11,12 @@
 !/code/[0-9][0-9]*/include/**/
 !/code/[0-9][0-9]*/include/**/*.c
 !/code/[0-9][0-9]*/include/**/*.h
+
+!/code/[0-9][0-9]*/platformio.ini
+!/code/lib/
+!/code/lib/**/
+!/code/lib/**/*.c
+!/code/lib/**/*.h
 
 # Keep generated files, simulation results, logs, and documents local.
 **/sim_results/
