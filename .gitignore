@@ -36,3 +36,7 @@
 *.hex
 *.o
 *.a
+
+# Publish the bilingual repository overview.
+!/README.md
+!/README.zh-CN.md
