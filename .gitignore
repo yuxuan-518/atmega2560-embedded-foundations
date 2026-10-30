@@ -1,0 +1,32 @@
+# Publish only C source/header files in each numbered project src/include directory.
+*
+!/.gitignore
+!/code/
+!/code/[0-9][0-9]*/
+!/code/[0-9][0-9]*/src/
+!/code/[0-9][0-9]*/src/**/
+!/code/[0-9][0-9]*/src/**/*.c
+!/code/[0-9][0-9]*/src/**/*.h
+!/code/[0-9][0-9]*/include/
+!/code/[0-9][0-9]*/include/**/
+!/code/[0-9][0-9]*/include/**/*.c
+!/code/[0-9][0-9]*/include/**/*.h
+
+# Keep generated files, simulation results, logs, and documents local.
+**/sim_results/
+**/test_results/
+**/logs/
+**/.pio/
+**/.vscode/
+**/.DS_Store
+*.log
+*.txt
+*.md
+*.pdf
+*.csv
+*.png
+*.jpg
+*.elf
+*.hex
+*.o
+*.a
