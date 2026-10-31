@@ -9,10 +9,12 @@ const words = {
 let language = new URLSearchParams(location.search).get("lang") === "zh" ? "zh" : "en";
 let currentId = Math.min(40, Math.max(1, Number(location.hash.replace("#project-", "")) || 1));
 let ticking = false;
+let jumpTarget = null;
 
 function jump(id, behavior = "auto") {
   const card = document.getElementById(`project-${id}`);
   if (!card) return;
+  jumpTarget = id;
   viewer.scrollTo({top:Math.max(0,card.offsetTop - parseFloat(getComputedStyle(viewer).paddingTop)),behavior});
   currentId = id;
   projectSelect.value = String(id);
@@ -79,7 +81,9 @@ for (const lang of ["en","zh"]) document.getElementById(`lang-${lang}`).addEvent
   language = lang;
   render();
 });
+for (const event of ["wheel","touchstart","pointerdown","keydown"]) viewer.addEventListener(event, () => { jumpTarget = null; }, {passive:true});
 viewer.addEventListener("scroll", () => {
+  if (jumpTarget !== null) return;
   if (ticking) return;
   ticking = true;
   requestAnimationFrame(() => {
