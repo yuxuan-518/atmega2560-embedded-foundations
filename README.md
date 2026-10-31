@@ -6,6 +6,92 @@ This repository documents my study of register-level AVR C programming on the AT
 
 **Platform:** Mega 2560-compatible development board · ATmega2560 · AVR C · PlatformIO
 
+## Project overview
+
+Scroll through all 40 project cards. Click a card to explore its source code. Projects 20 and 23 are hardware exercises without separate source directories.
+
+[Download the complete PDF](docs/project-cards/ATmega2560_Project_Cards_English.pdf) · [Read the text version](docs/project-cards/project-cards.md)
+
+[![Project 01: Blinking the Onboard LED](docs/project-cards/images/project-01.png)](code/01_bare_metal_blink)
+
+[![Project 02: Alternating Onboard and External LEDs](docs/project-cards/images/project-02.png)](code/02_external_led)
+
+[![Project 03: Setting LED Blink Counts and Intervals](docs/project-cards/images/project-03.png)](code/03_blink_function)
+
+[![Project 04: Cycling Through Three LED Colors](docs/project-cards/images/project-04.png)](code/04_traffic_light)
+
+[![Project 05: Button-Controlled LED with a Reliable Input](docs/project-cards/images/project-05.png)](code/05_button_hold_led)
+
+[![Project 06: Toggling an LED on Each Button Press](docs/project-cards/images/project-06.png)](code/06_button_toggle_led)
+
+[![Project 07: Selecting Four LED Behaviors](docs/project-cards/images/project-07.png)](code/07_button_statemachine)
+
+[![Project 08: Displaying Button Bounce as LED Flashes](docs/project-cards/images/project-08.png)](code/08_measure_button_bounce)
+
+[![Project 09: Reducing Duplicate Button Triggers](docs/project-cards/images/project-09.png)](code/09_nonblocking_debounce_fsm)
+
+[![Project 10: Different Light Responses to Short and Long Presses](docs/project-cards/images/project-10.png)](code/10_short_long_press)
+
+[![Project 11: Controlling Two LEDs with Two Buttons](docs/project-cards/images/project-11.png)](code/11_dual_button_dual_led)
+
+[![Project 12: Viewing Button Events and Counts on a Computer](docs/project-cards/images/project-12.png)](code/12_uart_tx_debug)
+
+[![Project 13: Controlling Two LEDs with Computer Commands](docs/project-cards/images/project-13.png)](code/13_uart_rx_command)
+
+[![Project 14: Switching a Buzzer with Computer Commands](docs/project-cards/images/project-14.png)](code/14_buzzer_square_wave)
+
+[![Project 15: Detecting Button Changes While an LED Blinks](docs/project-cards/images/project-15.png)](code/15_nonblocking_multitask)
+
+[![Project 16: Timing an LED with a Hardware Timer](docs/project-cards/images/project-16.png)](code/16_timer_1ms_tick)
+
+[![Project 17: Continuously Reporting System Uptime](docs/project-cards/images/project-17.png)](code/17-isr-volatile-atomicity)
+
+[![Project 18: Running LED, Button, and Reporting Tasks Together](docs/project-cards/images/project-18.png)](code/18_fixed_tick_tack_scheduler)
+
+[![Project 19: Generating Stepper Pulses and Direction Changes](docs/project-cards/images/project-19.png)](code/19_step_dir_pulse_generator)
+
+![Project 20: First Stepper Motor Operation](docs/project-cards/images/project-20.png)
+
+[![Project 21: Receiving Commands During Motor Operation](docs/project-cards/images/project-21.png)](code/21_nonblocking_stepper_control)
+
+[![Project 22: Stepper Acceleration, Deceleration, and an Automatic Demo](docs/project-cards/images/project-22.png)](code/22_stepper_acceleration_ramp)
+
+![Project 23: Comparing Motor Smoothness, Load, and Heating](docs/project-cards/images/project-23.png)
+
+[![Project 24: Stepper Homing, Limits, and Emergency Stop](docs/project-cards/images/project-24.png)](code/24_stepper_limits_homing_estop)
+
+[![Project 25: Positioning and Repeated Round Trips](docs/project-cards/images/project-25.png)](code/25_stepper_safe_system_integration)
+
+[![Project 26: Receiving Ammonia Sensor Data and Reporting Its Status](docs/project-cards/images/project-26.png)](code/26_ze801_nh3_uart_sensor)
+
+[![Project 27: Fixed Brightness and a Fading LED](docs/project-cards/images/project-27.png)](code/27_nonblocking_pwm_breathing_led)
+
+[![Project 28: Knob-Controlled Brightness and Voltage Readout](docs/project-cards/images/project-28.png)](code/28_potentiometer_led_brightness)
+
+[![Project 29: Reading Two Inputs and Selecting the Dimming Source](docs/project-cards/images/project-29.png)](code/29_adc_register_dual_channel)
+
+[![Project 30: Smoothing and Calibrating Knob Readings](docs/project-cards/images/project-30.png)](code/30_adc_filter_hysteresis_calibration)
+
+[![Project 31: Automatic LED Control from Ambient Light](docs/project-cards/images/project-31.png)](code/31_light_sensor_auto_led)
+
+[![Project 32: Playing Tones, a Scale, and a Melody](docs/project-cards/images/project-32.png)](code/32_nonblocking_buzzer_notes)
+
+[![Project 33: Counting External Events and Comparing Detection Methods](docs/project-cards/images/project-33.png)](code/33_external_interrupt_event_counter)
+
+[![Project 34: Ultrasonic Distance Measurement and Proximity Alerts](docs/project-cards/images/project-34.png)](code/34_nonblocking_ultrasonic_distance)
+
+[![Project 35: Scanning Connected Device Addresses](docs/project-cards/images/project-35.png)](code/35_nonblocking_i2c_scanner)
+
+[![Project 36: MPU-6050 Identification and Three-Axis Acceleration](docs/project-cards/images/project-36.png)](code/36_nonblocking_i2c_sensor_registers)
+
+[![Project 37: SPI Data Verification and Voltage Output](docs/project-cards/images/project-37.png)](code/37_nonblocking_spi_loopback_dac)
+
+[![Project 38: A Multi-Page OLED Status Display](docs/project-cards/images/project-38.png)](code/38_nonblocking_oled_dashboard)
+
+[![Project 39: Servo Angle, Speed, and Knob Tracking](docs/project-cards/images/project-39.png)](code/39_nonblocking_servo_control)
+
+[![Project 40: Automatic Round Trips and Integrated System Control](docs/project-cards/images/project-40.png)](code/40_mega_integrated_control_system)
+
 ## Why I started
 
 During Cooper Union's six-week Summer STEM program, I was introduced to embedded development and worked on a sensor project. The pace was fast. Afterward, I realized I needed more time to revisit the foundations and connect registers, program state, communication, and hardware behavior.
