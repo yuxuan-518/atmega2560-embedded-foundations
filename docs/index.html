@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="40 ATmega2560 project cards, with plain-language outcomes and technical descriptions. English and Chinese.">
+  <title>ATmega2560 · Project overview</title>
+  <link rel="stylesheet" href="viewer.css">
+  <script src="cards.js" defer></script>
+  <script src="viewer.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div class="heading-row">
+        <h1 id="heading">ATmega2560 · Project overview</h1>
+        <nav class="languages" aria-label="Language">
+          <a href="?lang=en" lang="en" id="lang-en" aria-current="page">English</a>
+          <a href="?lang=zh" lang="zh-CN" id="lang-zh">简体中文</a>
+        </nav>
+      </div>
+      <p id="intro">Scroll inside the window to explore all 40 project cards. Click a card to view its code.</p>
+    </header>
+    <div class="toolbar">
+      <label for="project" id="jump-label">Jump to</label>
+      <select id="project" aria-controls="viewer"></select>
+      <a id="pdf" href="project-cards/ATmega2560_Project_Cards_English.pdf" target="_blank" rel="noopener">PDF</a>
+      <a id="text-version" href="https://github.com/yuxuan-518/atmega2560-embedded-foundations/blob/main/docs/project-cards/project-cards.md" target="_blank" rel="noopener">Text version</a>
+      <a id="repository" href="https://github.com/yuxuan-518/atmega2560-embedded-foundations">GitHub</a>
+    </div>
+    <section id="viewer" class="viewer" tabindex="0" role="region" aria-label="Scrollable project cards"></section>
+    <footer>
+      <span id="position">01 / 40</span>
+      <span id="note">Projects 20 and 23 are hardware exercises without separate source directories.</span>
+    </footer>
+    <noscript><p>JavaScript is needed for the viewer. <a href="project-cards/ATmega2560_Project_Cards_English.pdf">Open the English PDF</a> · <a href="project-cards/ATmega2560_Project_Cards_Chinese.pdf">打开中文 PDF</a></p></noscript>
+  </main>
+</body>
+</html>

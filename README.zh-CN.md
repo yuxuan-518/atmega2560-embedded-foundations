@@ -6,6 +6,14 @@
 
 **平台：** Mega 2560 兼容开发板 · ATmega2560 · AVR C · PlatformIO
 
+## 项目总览
+
+[**打开项目总览 →**](https://yuxuan-518.github.io/atmega2560-embedded-foundations/?lang=zh)
+
+在固定高度的窗口内向下滚动，查看全部 40 张项目卡；支持中英文切换，并可打开对应代码。
+
+[中文 PDF](docs/project-cards/ATmega2560_Project_Cards_Chinese.pdf) · [English PDF](docs/project-cards/ATmega2560_Project_Cards_English.pdf)
+
 ## 为什么开始
 
 在 Cooper Union 的六周 Summer STEM 课程中，我接触了嵌入式开发，也参与了传感器项目。课程节奏很快，结束后我意识到，自己还需要时间重新梳理一些基础，把寄存器、程序状态、通信和硬件行为之间的关系连接起来。

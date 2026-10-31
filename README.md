@@ -8,11 +8,11 @@ This repository documents my study of register-level AVR C programming on the AT
 
 ## Project overview
 
-[**View all 40 project cards in the PDF viewer →**](docs/project-cards/ATmega2560_Project_Cards_English.pdf)
+[**Open the project overview →**](https://yuxuan-518.github.io/atmega2560-embedded-foundations/?lang=en)
 
-Open the overview and scroll through the project cards in GitHub's PDF viewer.
+Browse all 40 project cards in a scrollable viewer, switch between English and Chinese, and open the corresponding code.
 
-[Read the text version](docs/project-cards/project-cards.md)
+[English PDF](docs/project-cards/ATmega2560_Project_Cards_English.pdf) · [中文 PDF](docs/project-cards/ATmega2560_Project_Cards_Chinese.pdf)
 
 ## Why I started
 
